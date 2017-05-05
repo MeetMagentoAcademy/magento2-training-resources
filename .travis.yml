@@ -1,0 +1,15 @@
+language: node_js
+node_js: 6
+cache:
+  yarn: true
+  directories:
+    - node_modules
+script:
+  - yarn build
+  - cd _book
+  - git init
+  - git commit --allow-empty -m 'Update docs'
+  - git checkout -b gh-pages
+  - git add .
+  - git commit -am 'Update docs'
+  - git push git@github.com:MeetMagentoAcademy/magento2-training-resources gh-pages --force
