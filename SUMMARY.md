@@ -4,7 +4,8 @@
   * [Overview](sysops/README.md)
 
 ### 2. Administration
-  * [Overview](administration/README.md)
+  * [Part 1 - Basic store configuration](administration/part1.md)
+  * [Part 2 - Creating your own products catalog](administration/part2.md)
 
 ### 3. Backend
   * [Overview](backend/README.md)
