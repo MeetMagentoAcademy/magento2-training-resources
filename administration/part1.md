@@ -50,9 +50,7 @@ Nice, now your store has a name! If we have name, why not logo? or favicon? or b
 It's time to find some nice logo for your store!
 
 1. Open your homepage
-
-Lets look for some simple elemnts of your homepage that can makes your store unique.
-
+  * Lets look for some simple elemnts of your homepage that can makes your store unique.
 2. Upload Your Store Logo! (try to find better way than this)
   * go to your admin panel
   * go to ... > design 
@@ -71,8 +69,7 @@ Lets look for some simple elemnts of your homepage that can makes your store uni
 
 *REFRESH YOUR SITE STORE*
 
-**III. Magento store structure: Websites, Stores & Views**
-
+###Great! Now your store is set up with basic information! Yey!
 
 
 

@@ -5,7 +5,16 @@
 
 ### 2. Administration
   * [Part 1 - Basic store configuration](administration/part1.md)
-  * [Part 2 - Creating your own products catalog](administration/part2.md)
+  * [Part 2 - Creating catalog - products](administration/part2.md)
+  * [Part 3 - Creating catalog - atributes](administration/part3.md)
+  * [Part 4 - Creating catalog - categories](administration/part4.md)
+  * [Part 5 - Marketing - Catalog price rules ](administration/part5.md)
+  * [Part 6 - Marketing - Cart price rules ](administration/part6.md)
+  * [Part 7 - Marketing - Customers](administration/part7.md)
+  * [Part 8 - Marketing - Email templates](administration/part8.md)
+  * [Part 9 - Orders managment](administration/part9.md)
+  * [Part 10 - Payments Methodes](administratiom/part10.md)
+  * [Part 11 - Shipping methodes](administration/part11.md)
 
 ### 3. Backend
   * [Overview](backend/README.md)
