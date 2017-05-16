@@ -69,6 +69,12 @@ It's time to find some nice logo for your store!
 
 *REFRESH YOUR SITE STORE*
 
+###Currency Setup
+
+1. Open Admin panel 
+2. Go to Stores => Setting => Configuration => General => Currency Setup
+3. Choose your default Currency
+
 ###Great! Now your store is set up with basic information! Yey!
 
 
