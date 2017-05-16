@@ -1,11 +1,11 @@
-#Magento Admin Panel Workshops part #5
+#Magento Admin Panel Workshops part #8
 
-###1. Email templates - basic info
+###1. Email tamplates - basic info
 
 Email templates are placed in Marketing tab.
 Look on the list of email templates.
 
-####1. Basic template construction
+####1. Basic template structure
 * TASK:
 List three basic template elements.
 * ...
@@ -14,7 +14,7 @@ List three basic template elements.
 
 Check yourself: http://docs.magento.com/m2/ce/user_guide/marketing/email-template-configuration.html
 
-* TASK:
+* TAKS:
 Set up logo email template and edit header and footer template.
 
 

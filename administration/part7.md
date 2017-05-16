@@ -1,4 +1,4 @@
-#Magento Admin Panel Workshops part #5
+#Magento Admin Panel Workshops part #7
 
 ###1. Customers - basic info
 

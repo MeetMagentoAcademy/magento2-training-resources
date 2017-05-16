@@ -1,4 +1,4 @@
-#Magento Admin Panel Workshops part #5
+#Magento Admin Panel Workshops part #9
 
 ###1. Order workspace
 Read: http://docs.magento.com/m2/ce/user_guide/sales/orders-workspace.html
@@ -13,7 +13,7 @@ Read: http://docs.magento.com/m2/ce/user_guide/sales/orders-workspace.html
 
 Open: http://docs.magento.com/m2/ce/user_guide/sales/order-workflow.html
 
-###3. Order workflow vs. order status workflow
+###3. Order workflow vs. oreder status workflow
 
 Open: http://docs.magento.com/m2/ce/user_guide/sales/order-status-workflow.html
 
@@ -27,6 +27,9 @@ For example "Contact with client"
 2. Add status to state.
 3. Edit one of existing status.
 
+###5. Minimum order ammount
+
+* TASK: Set up minimal ammount for your orders.
 
 
 

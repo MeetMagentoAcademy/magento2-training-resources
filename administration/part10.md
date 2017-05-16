@@ -1,7 +1,7 @@
 #Magento Admin Panel Workshops part #10
 
 ###Payment methods
-There's two types of payment available on Magento 2
+There's two types of payment availble on Magento 2
 
 1. Default offline payments
   * Check / Money Order
@@ -19,12 +19,12 @@ There's two types of payment available on Magento 2
   * Zero Subtotal Checkout
 
 
-2. Default online payment
+2. Default online payments
   * Recommended Solutions
     * PayPal
     * Braintree
 
 3. TAX Conf.
-4. 
+4. Currency Configuration
 
 

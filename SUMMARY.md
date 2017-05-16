@@ -16,8 +16,9 @@
   * [Part 10 - Payments Methods](administration/part10.md)
   * [Part 11 - Shipping methods](administration/part11.md)
   * [Part 12 - Store Setting Conf](administration/part12.md)
-  * [Part 13 - Export/Import products](administration/part14.md)
-  * [Part 14 - Reports](administration/part15.md)
+  * [Part 13 - Export/Import products](administration/part13.md)
+  * [Part 14 - Reports](administration/part14.md)
+  * [Contact/ Q&A](administration/part15.md))
 
 ### 3. Backend
   * [Overview](backend/README.md)
