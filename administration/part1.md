@@ -8,19 +8,19 @@ This part of workshops is prepared to set up basic conf. of your store and prepa
 2. Tap on each of section on left sidebar. (Sales, Products, Customers, Marketing...)
 3. Changing basic admin url (try to find a better way than this): 
 
-Go to Stores=> Configuration=> Advanced => Admin => Admin Base URL
+Go to Stores => Configuration => Advanced => Admin => Admin Base URL
 
-Q: Where should i start? 
+Q: Where should i start?  
 The best way to start learning magento admin panel is setting up basic store information.
-It's the simplest way to lear the logic why some confifuguration has in specific place in magento admin.
+It's the simplest way to lear the logic why some configuration has in specific place in magento admin.
 
 ## I. Basic store configuration.
 
-As all of you have the same magento store, that looks the same, it's nice to make it look diffrient, and takes first steps to set up and personalize your store.
+As all of you have the same magento store, that looks the same, it's nice to make it look different, and takes first steps to set up and personalize your store.
 
 **I. Setting up general store information**
 
-_Any store should have set up basic information about store like, store name or country where your stroe sell it's products_
+_Any store should have set up basic information about store like, store name or country where your store sell it's products_
 
 1. Choose your:
   * Store name
@@ -28,7 +28,7 @@ _Any store should have set up basic information about store like, store name or 
   * Store Hours
   * Country
   * Region/ State
-  * Store adress (can be fake) 
+  * Store address (can be fake) 
   * NIP/ Vat number (can be fake)
 2. Enter your store information:
   * On the Admin sidebar, tap Stores. Then under Settings, choose Configuration.
@@ -41,16 +41,16 @@ _Any store should have set up basic information about store like, store name or 
     * Select the Region/State with the country.
     * Enter the Store Address. If the address is long, continue the address on Store Address Line 2.
     * If applicable, enter the VAT Number of your store. To verify the number, click the Validate VAT Number button.
-  4. When complate, tap Save Config
+  4. When complete, tap Save Config
 
-**II. Storefornt branding**
+**II. Storefront branding**
 
 
 Nice, now your store has a name! If we have name, why not logo? or favicon? or both!  
 It's time to find some nice logo for your store!
 
 1. Open your homepage
-  * Lets look for some simple elemnts of your homepage that can makes your store unique.
+  * Lets look for some simple elements of your homepage that can makes your store unique.
 2. Upload Your Store Logo! (try to find better way than this)
   * go to your admin panel
   * go to ... > design 
@@ -60,7 +60,7 @@ It's time to find some nice logo for your store!
   * tab "Save Configuration"Easy? 
   Yep. No we have store name and logo.
 3. Add your favicon. ( u can use this one: <link> or create one: 32x32 px)  
-  * go to ... > ... > HTML Head (u should know where to find a place to upload favicon fron last step.)
+  * go to ... > ... > HTML Head (u should know where to find a place to upload favicon from last step.)
   * upload your favicon 
   * Tap "Save Config."
 4. Welcome massage

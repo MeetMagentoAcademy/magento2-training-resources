@@ -1,5 +1,5 @@
 # Magento Admin Panel Workshops part #4
-This part will show you how to crate categories, how to manage them and product in it, and how to add them to the leyer navigation structure.
+This part will show you how to crate categories, how to manage them and product in it, and how to add them to the layer navigation structure.
 
 ##1. Creating categories
 

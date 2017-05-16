@@ -9,7 +9,7 @@ Before you start to create your catalog it is good categorize store elements by 
 
 1. Open your store in browser and try to find a location with:
   * homepage view
-  * catgeory view
+  * category view
   * product view
   * sign in/ log in view - create your user test account 
   * my account view
@@ -21,24 +21,25 @@ Before you start to create your catalog it is good categorize store elements by 
 
 ####1. Site structure
 ![alt text](/administration/media/structure.png "test")
-  * TASK: By looking on your store, and graphic above choose if sentence if true of false:
-      1. One product can be assignee to two diffrent categories
-      2. Products can be asignee only to one catalog.
+  * TASK:  
+  By looking on your store, and graphic above choose if sentence if true of false:
+      1. One product can be assignee to two different categories
+      2. Products can be assignee only to one catalog.
       3. Wishlist is a list of product that client can see below category view.
 
 ####2. Websites, stores, store views.
 
-  Let's say you want to start your own bissness by selling rubber duckies, and rubber chickens online. 
-  You already have bought domain for your shops. But it's getting harder, because u can sell your rubber duckies only to Poland and France, and rubber chickens to Poland and Japan. So what now? You have two domains, so basicly do you need to create two admin panels, as it's two complitly different stores? 
+  Let's say you want to start your own business by selling rubber duckies, and rubber chickens online. 
+  You already have bought domain for your shops. But it's getting harder, because u can sell your rubber duckies only to Poland and France, and rubber chickens to Poland and Japan. So what now? You have two domains, so basically do you need to create two admin panels, as it's two completely different stores? 
 
   Magento has an easy way to manage 2 stores on the same admin panel, also, there's an easy way to prepare different views for different language of your store.
-  * TASK II:
   
+  * TASK:  
   Create two websites with one store and 3 different store views.
 
 ####3. First steps of creating catalog - creating simple products. 
 
-  As u could see on a graphic above, products is the deepest thing in simple shop strucure. 
+  As u could see on a graphic above, products is the deepest thing in simple shop structure. 
   So when we want to create our own catalog it's good to start with creating simple product.
 
   More info: http://docs.magento.com/m2/ce/user_guide/catalog/product-create-simple.html
@@ -53,10 +54,10 @@ Before you start to create your catalog it is good categorize store elements by 
       * color: yellow
       * add an product image
     4. Choose product type
-    5. Choose atribute set
+    5. Choose attribute set
           
-          You can already see that this information i gave u above it's not enought to create product.
-          To create simple product you need filled up this informations:
+          You can already see that this information i gave u above it's not enough to create product.
+          To create simple product you need filled up this information:
           Product name, sku, price.
 
          _What is SKU: In the field of inventory management, a **stock keeping unit**._
@@ -67,7 +68,7 @@ Before you start to create your catalog it is good categorize store elements by 
 
 ####4. Creating configurable products.
 
-  Your a rubber ducky seller, and u want to extaned your sell by selling same model of the rubber ducky but in a diffrent colors. This is where can use configurable products for giving your clinets a chance to choose the color of your products in product view.
+  Your a rubber ducky seller, and u want to extended your sell by selling same model of the rubber ducky but in a different colors. This is where can use configurable products for giving your clinets a chance to choose the color of your products in product view.
 
   A configurable product looks like a single product with drop-down lists of options for each variation. Each option is actually a separate simple product with a unique SKU, which makes it possible to track inventory for each product variation. You could achieve a similar effect by using a simple product with custom options, but without the ability to track inventory for each variation.
   More info: http://docs.magento.com/m2/ce/user_guide/catalog/product-create-configurable.html
@@ -77,11 +78,11 @@ Before you start to create your catalog it is good categorize store elements by 
       * Go to catalog
       * Click on "Add product"
       * Choose a type of product
-      * Choose artibute set
+      * Choose attribute set
       * Add all needed information: name, sku, price
       * Find a tab "Configurations" 
-      * Choose artibute from the list( in this case we choose "color")
-      * Choose values of atribute
+      * Choose attribute from the list( in this case we choose "color")
+      * Choose values of attribute
       * Add images for each color
       * Add price for each color
       * Add stock value for each color
@@ -91,7 +92,7 @@ Before you start to create your catalog it is good categorize store elements by 
 
 ####5. Creating grouped product
 
-  Let's say u want to give your customer a chance to buy rubber ducky, and ruubber chicken by visit only one product. Thats when we can create grouped product.
+  Let's say u want to give your customer a chance to buy rubber ducky, and rubber chicken by visit only one product. That's when we can create grouped product.
 
   A grouped product is made up of simple standalone products that are presented as a group. 
   More info: http://docs.magento.com/m2/ce/user_guide/catalog/product-create-grouped.html
@@ -101,7 +102,7 @@ Before you start to create your catalog it is good categorize store elements by 
       * Go to products => catalog
       * Click on "Add product"
       * Choose a type of product
-      * Choose artibute set
+      * Choose attribute set
       * Add all needed information: name, sku, price etc.
       * Find tab called "Grouped product"
       * Add yours products to group
