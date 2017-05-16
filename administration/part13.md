@@ -36,4 +36,4 @@ The size of the import file is determined by the settings in the php.ini file on
 1. Go to System => Data transfer => Import 
 2. Configure import
 3. Import edited file.
-(Remeber to save your file as csv. )
+(Remember to save your file as csv. )

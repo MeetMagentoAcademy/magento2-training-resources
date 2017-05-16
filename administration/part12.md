@@ -10,7 +10,7 @@ Going through Configuration:
     5. Store Email Addresses
     6. Contacts
     7. Reports
-    8. Content Managment
+    8. Content Management
     9. New relic reporting
 2. Catalog
     1. Catalog
@@ -34,7 +34,7 @@ Going through Configuration:
     3. PDF Print-out
     4. TAX
     5. Checkout
-    6. Shipping methodes
+    6. Shipping methods
     7. Google API
     8. Payment Methods
     9. Gift Cards

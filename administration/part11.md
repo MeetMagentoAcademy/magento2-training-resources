@@ -1,8 +1,8 @@
 #Magento Admin Panel Workshops part #11
 
-### Shipping Methodes
+### Shipping Methods
 
-1. Basic shipping methodes
+1. Basic shipping methods
     * Free Shipping - Free shipping is one of the most effective promotions you can offer. It can be based on a minimum purchase, or set up as a cart price rule that is applied when a set of conditions is met. If both apply to the same order, the configuration setting takes precedence over the cart rule.
         * TASK:
         Steps: http://docs.magento.com/m2/ce/user_guide/shipping/shipping-flat-rate.html

@@ -13,7 +13,7 @@ Read: http://docs.magento.com/m2/ce/user_guide/sales/orders-workspace.html
 
 Open: http://docs.magento.com/m2/ce/user_guide/sales/order-workflow.html
 
-###3. Order workflow vs. oreder status workflow
+###3. Order workflow vs. order status workflow
 
 Open: http://docs.magento.com/m2/ce/user_guide/sales/order-status-workflow.html
 
