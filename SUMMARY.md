@@ -18,7 +18,7 @@
   * [Part 12 - Store Setting Conf](administration/part12.md)
   * [Part 13 - Export/Import products](administration/part13.md)
   * [Part 14 - Reports](administration/part14.md)
-  * [Contact/ Q&A](administration/part15.md))
+  * [Contact/ Q&A](administration/part15.md)
 
 ### 3. Backend
   * [Overview](backend/README.md)
