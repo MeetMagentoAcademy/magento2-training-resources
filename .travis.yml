@@ -5,7 +5,6 @@ cache:
     - node_modules
 script:
   - npm run build
-  -
 deploy:
   local_dir: _book
   provider: pages
