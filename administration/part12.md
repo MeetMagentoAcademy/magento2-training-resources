@@ -15,7 +15,7 @@ Going through Configuration:
 2. Catalog
     1. Catalog
     2. Inventory
-    3. Visual Merhandiser
+    3. Visual Merchandiser
     4. XML Sitemap
     5. RSS Feeds
     6. Email to a Friend
