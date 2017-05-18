@@ -1,6 +1,9 @@
 # Env
 .DS_Store
 
+# IDE rules
+.idea/
+
 # Node rules:
 ## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
@@ -12,6 +15,7 @@ node_modules
 
 # Book build output
 _book
+npm-debug.log
 
 # eBook build output
 *.epub
