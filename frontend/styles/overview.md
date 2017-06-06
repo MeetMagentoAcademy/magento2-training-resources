@@ -59,6 +59,7 @@ Replaces the original `@magento_import` directives with the standard `@import` d
 Before:
 ```less
 //@magento_import 'source/_widgets.less'; // Theme widgets
+```
 
 After:
 ```less

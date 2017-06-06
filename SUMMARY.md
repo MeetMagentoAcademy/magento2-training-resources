@@ -35,5 +35,8 @@
   * [Styles](frontend/styles/overview.md)
     * [Grunt](frontend/styles/grunt.md)
     * [SASS](frontend/styles/sass.md)
-
-
+    * [Magento UI](frontend/styles/magento-ui.md)
+  * [JavaScript](frontend/javascript/overview.md)
+    * [Require.js](frontend/javascript/requirejs.md)
+    * [AMD](frontend/javascript/using-amd.md)
+    * [Custom modules](frontend/javascript/custom.md)
