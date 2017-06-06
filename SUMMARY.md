@@ -24,4 +24,7 @@
   * [Overview](backend/README.md)
 
 ### 4. Frontend
-  * [Overview](frontend/README.md)
+  * [Themes](frontend/themes/overview.md)
+    * [Structure](frontend/themes/structure.md)
+    * [Inheritance](frontend/themes/inheritance.md)
+    * [Debuging](frontend/themes/debug.md)

@@ -1,0 +1,68 @@
+# Locate templates, layouts, and styles
+
+When you create a Magento theme, you might need to create override files for default theme and module view files. To do so, you must determine which template, layout, and style files Magento uses. This topic describes how to do this.
+
+## Locate templates
+
+To locate the template that is responsible for a specific part of the storefront or Admin, you can use Magento built-in template hints.
+
+To enable template hints:
+1. Click Stores > Configuration > ADVANCED > Developer.
+2. In the Scope dropdown in the upper-left corner select the view for which you want the template hints.
+3. In the Debug tab, set Template Path Hints for storefront to Yes. To enable path hints for Admin set Template Path Hints for Admin to Yes.
+4. To save the changes, click Save Config in the upper-right corner.
+
+![](http://devdocs.magento.com/common/images/fdg_debug_theme.png)
+
+Now that you have enabled template hints, reload the page that you want to modify, and review the path for the template file or files that template hints show.
+
+For example, here is how a storefront category page looks with enabled template hints:
+
+![](http://devdocs.magento.com/common/images/theme_debug2.png)
+
+In this example mini shopping cart page element is defined by the `<Magento_Checkout_module_dir>/view/frontend/templates/cart/minicart.phtml` template:
+
+![](http://devdocs.magento.com/common/images/theme_debug3.png)
+
+
+## Locate layouts
+
+Just like templates, layouts are saved on a per-module basis. You can easily locate the layout file by determining in which module the templates for the element you are interested in reside in. To locate the template, you can use Template Hints or text search in the app directory, as described previously.
+
+After you have determined the module, you can search for the layout in the following locations:
+1. `<current_theme_dir>/<Namespace>_<Module>/layout/`
+2. `<parent_theme(s)_dir>/<Namespace>_<Module>/layout/`
+3. `<module_dir>/view/frontend/layout/`
+4. `<module_dir>/view/base/layout/`
+
+There is no straightforward algorithm how to define at once the exact layout file, but in most cases layout file names are self descriptive. Also you can search them for mentions of the corresponding templates.
+
+Let’s say you need to locate the layout that is responsible for displaying mini shopping cart on the storefront, when the Blank theme by Magento is applied for the store view.
+
+Using the Template Hints we determine that the template is app/code/Magento/Checkout/view/frontend/templates/cart/minicart.phtml, and in the path, we see that it belongs to the Magento_Checkout module.
+
+Let’s search for the layout following the fallback scheme:
+
+1. Check the `pp/design/frontend/Magento/blank/Magento_Checkout/` layout. To locate the required layout, search this directory for occurrences of the template name, `minicart.phtml`. No matching file is found, so we proceed to the next fallback level, which is the parent theme layouts.
+2. We can find the info about parent theme in a theme configuration file `theme.xml`, the parent theme name is specified there in the `<parent></parent>` node. In the `app/design/frontend/Magento/blank/theme.xml` there’s no `<parent>` node, which means the Blank theme has no parents. So we should search on the next fallback level which is the module layouts.
+3. The `Magento_Checkout` layouts are located in `app/code/Magento/Checkout/view/frontend/layout/`. After searching this directory for occurrences of `minicart.phtml`, we define that the layout we are looking for is `app/code/Magento/Checkout/view/frontend/layout/default.xml`.
+
+
+## Locate styles
+
+### Offical (oldfashioned) way
+
+To locate a CSS rule that is applied to a certain element, find the template for the page that contains the element. Or you can use browser debugging tools, to locate the class name. After you find the class name, use text search in the theme and module styles directories to locate the `.less` or `.css` file that defines the class. Perform the search according to the following fallback scheme:
+
+1. Theme styles `<current_theme_dir>/web/css/`
+2. Module theme styles `<current_theme_dir>/<Namespace>_<Module>/web/css/`
+3. Parent theme styles `<parent_theme_dir>/web/css/`
+4. Parent theme Module styles `<parent_theme_dir>/<Namespace>_<Module>/web/css/`
+5. Module styles for the frontend area `<module_dir>/view/frontend/web/css/`
+6. Module styles for the base area `<module_dir>/view/base/web/css/`
+
+### How the real front-end devs handle it
+1. Compile styles with sourcemaps generation enabled
+2. Get hints about source files paths directly in your browser dev tools
+
+![](https://i.imgur.com/DaKGawV.png)
