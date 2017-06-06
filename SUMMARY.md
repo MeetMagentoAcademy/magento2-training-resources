@@ -28,3 +28,12 @@
     * [Structure](frontend/themes/structure.md)
     * [Inheritance](frontend/themes/inheritance.md)
     * [Debuging](frontend/themes/debug.md)
+  * [Layout](frontend/layout/overview.md)
+    * [Types](frontend/layout/types.md)
+    * [Examples](frontend/layout/examples.md)
+  * [Templates](frontend/templates/overview.md)
+  * [Styles](frontend/styles/overview.md)
+    * [Grunt](frontend/styles/grunt.md)
+    * [SASS](frontend/styles/sass.md)
+
+
