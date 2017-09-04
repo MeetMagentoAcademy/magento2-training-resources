@@ -1,7 +1,17 @@
 * [Introduction](README.md)
 
 ### 1. Sysops
-  * [Overview](sysops/README.md)
+  * [Part 1 - Virtual machine](sysops/part1.md)
+  * [Part 2 - Configuring network for VM](sysops/part2.md)
+  * [Part 3 - Dedicated user for Magento processes](sysops/part3.md)
+  * [Part 4 - Debian repositories](sysops/part4.md)
+  * [Part 5 - MySQL installation](sysops/part5.md)
+  * [Part 6 - PHP](sysops/part6.md)
+  * [Part 7 - Web server](sysops/part7.md)
+  * [Part 8 - Two Redis instances](sysops/part8.md)
+  * [Part 9 - Code deployment](sysops/part9.md)
+  * [Part 10 - Cron jobs](sysops/part10.md)
+  * [Authors](sysops/AUTHORS.md)
 
 ### 2. Administration
   * [Part 1 - Basic store configuration](administration/part1.md)
