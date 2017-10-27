@@ -31,7 +31,14 @@
   * [Contact/ Q&A](administration/part15.md)
 
 ### 3. Backend
-  * [Overview](backend/README.md)
+  * [Modules](backend/modules.md)
+    * [Creating modules](backend/modules/create.md)
+    * [Defining controllers](backend/modules/controller.md)
+    * [Degining blocks](backend/modules/block.md)
+    * [Accessing database](backend/modules/database.md)
+    * [Tips for using composer](backend/modules/composer.md)
+  * [Dependency Injection](backend/di.md)
+  * [EAV](backend/eav.md)
 
 ### 4. Frontend
   * [Themes](frontend/themes/overview.md)
