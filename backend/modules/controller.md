@@ -54,4 +54,76 @@ When request is processed by `rewrite` controller and it matches one of definced
 ## Finaly `Hello world!`
 
 
+Now we know that we need to create class `\MMAcademy\Hello\Controller\Index\IndexAction` in order for StandardRouter to find it and execute.
+
+Front action class must implement `Magento\Framework\App\ActionInterface` listed below, but usually we are extending from `\Magento\Framework\App\Action\Action` that implements few shortcuts and under-the-hood functionalities. 
+
+```php
+<?php
+namespace Magento\Framework\App;
+
+interface ActionInterface
+{
+    /**
+     * Dispatch request
+     *
+     * @return \Magento\Framework\Controller\ResultInterface|ResponseInterface
+     * @throws \Magento\Framework\Exception\NotFoundException
+     */
+    public function execute();
+}
+```
+
+Here is simplest Action class implementation
+
+```php
+<?php
+
+namespace MMAcademy\Hello\Controller\Index;
+
+use Magento\Framework\App\ResponseInterface;
+
+class Index extends \Magento\Framework\App\Action\Action
+{
+    public function execute()
+    {
+        echo 'Hello world';
+    }
+}
+```
+
+But this is not a fulfilling result.
+Why?
+Beacuse it is not properly Object Oriented solution - we are using procedure in controller that echo's string instead of returing a result object that contains our resposne.
+However beacuse we did use `\Magento\Framework\App\Action\Action` proper implementation is just few strokes away.
+We can use `_resultFactory` property to create new `\Magento\Framework\Controller\Result\Raw` object.
+That object will allow us to return just a plain text as a response to our HTTP query.
+
+Be sure to take a longer look at `\Magento\Framework\Controller\ResultFactory` and other types of results we can create.
+
+```php
+<?php
+
+namespace MMAcademy\Hello\Controller\Index;
+
+use Magento\Framework\App\ResponseInterface;
+
+class Index extends \Magento\Framework\App\Action\Action
+{
+
+    /**
+     * Dispatch request
+     *
+     * @return \Magento\Framework\Controller\ResultInterface|ResponseInterface
+     * @throws \Magento\Framework\Exception\NotFoundException
+     */
+    public function execute()
+    {
+        /** @var \Magento\Framework\Controller\Result\Raw $result */
+        $result = $this->resultFactory->create(\Magento\Framework\Controller\ResultFactory::TYPE_RAW);
+        $result->setContents('Hello World!!!');
+        return $result;
+    }
+}
+```
 
