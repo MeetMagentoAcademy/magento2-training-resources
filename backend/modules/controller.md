@@ -49,7 +49,7 @@ But we have seen that product URL can be "nice" Search Engine Optimized values.
 URL rewrite mechanisms allow to define pairs of "nice" URLs and internal URIs.
 Apart from `standard` controller or `adminhtml` controller there is `rewrite` controller.
 Every request attempts to mach with every controller defined in system in order they are defined.
-When request is processed by `rewrite` controller and it matches one of definced URL pair request is internally modified to point to coresponding internal address.
+When request is processed by `rewrite` controller and it matches one of defined URL pair request is internally modified to point to corresponding internal address.
 
 ## Finaly `Hello world!`
 
@@ -94,8 +94,8 @@ class Index extends \Magento\Framework\App\Action\Action
 
 But this is not a fulfilling result.
 Why?
-Beacuse it is not properly Object Oriented solution - we are using procedure in controller that echo's string instead of returing a result object that contains our resposne.
-However beacuse we did use `\Magento\Framework\App\Action\Action` proper implementation is just few strokes away.
+Beacuse it is not properly Object Oriented solution - we are using procedure in controller that echo's string instead of returning a result object that contains our response.
+However because we did use `\Magento\Framework\App\Action\Action` proper implementation is just few strokes away.
 We can use `_resultFactory` property to create new `\Magento\Framework\Controller\Result\Raw` object.
 That object will allow us to return just a plain text as a response to our HTTP query.
 
