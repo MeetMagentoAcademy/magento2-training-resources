@@ -34,6 +34,7 @@
   * [Modules](backend/modules.md)
     * [Creating modules](backend/modules/create.md)
     * [Defining controllers](backend/modules/controller.md)
+    * [Rendering page layout](backend/modules/layout.md)
 
 ### 4. Frontend
   * [Themes](frontend/themes/overview.md)

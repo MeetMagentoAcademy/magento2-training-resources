@@ -127,3 +127,6 @@ class Index extends \Magento\Framework\App\Action\Action
 }
 ```
 
+## Next Steps 
+
+* [Rendering page layout](layout.md)
