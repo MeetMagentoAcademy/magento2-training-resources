@@ -35,6 +35,9 @@
     * [Creating modules](backend/modules/create.md)
     * [Defining controllers](backend/modules/controller.md)
     * [Rendering page layout](backend/modules/layout.md)
+    * [Translations](backend/modules/translations.md)
+    * [Store configuration](backend/modules/store_configuration.md)
+    * [Flash message](backend/modules/flash_message.md)
 
 ### 4. Frontend
   * [Themes](frontend/themes/overview.md)

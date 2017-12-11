@@ -167,4 +167,7 @@ Also we did use `escapeHtml($message)` method to prevent injection of malicious 
 
 You can now try in You browsers addresses like `/hello?name=Bob` or `/hello/index/index/name/Alice` to see that both parameter passing methods work correctly.
 
+## Next Steps
+
+* [Using translations](translations.md)
 
