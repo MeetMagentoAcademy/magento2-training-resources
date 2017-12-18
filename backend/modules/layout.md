@@ -167,6 +167,63 @@ Also we did use `escapeHtml($message)` method to prevent injection of malicious 
 
 You can now try in You browsers addresses like `/hello?name=Bob` or `/hello/index/index/name/Alice` to see that both parameter passing methods work correctly.
 
+## Form example
+
+As You can imagine manually adding parameters is now user friendly and we should allow customers to submit this information using simple form on store front.
+
+Lets add new block with form to every page that contains a sidebar by createing file `view/frontend/layout/default.xml` that will impact page structure of every request resulting in page rendering.
+
+```xml
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="3columns"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="sidebar.main">
+            <block name="hello-form" class="MMAcademy\Hello\Block\Form"/>
+        </referenceContainer>
+    </body>
+</page>
+```
+
+Now define class behaind that block in `Block/From.php`
+
+```php
+<?php
+
+namespace MMAcademy\Hello\Block;
+
+use Magento\Framework\View\Element\Template;
+
+class Form extends Template
+{
+    protected $_template = 'MMAcademy_Hello::form.phtml';
+
+    public function getFormAction()
+    {
+        return $this->getUrl('hello/index/index');
+    }
+}
+```
+
+As You can see it defines template that will be used and one public method that will point to our controller.
+
+And here is example form that can be used for `view/frontend/templates/form.phtml`.
+
+```php
+<?php /** @var \MMAcademy\Hello\Block\Form $block */ ?>
+
+<div>
+    <form action="<?= $block->getFormAction() ?>" method="POST">
+        <label for="hello-name">Your name</label>
+        <input type="text" name="name" id="hello-name"/>
+
+        <button type="submit">Greet</button>
+    </form>
+</div>
+```
+
 ## Next Steps
 
 * [Using translations](translations.md)
