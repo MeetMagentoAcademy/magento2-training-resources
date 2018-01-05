@@ -38,6 +38,8 @@
     * [Translations](backend/modules/translations.md)
     * [Store configuration](backend/modules/store_configuration.md)
     * [Flash message](backend/modules/flash_message.md)
+    * [Acessing databade](backend/modules/database.md)
+    * [APIs](backend/modules/service_contracts.md)
 
 ### 4. Frontend
   * [Themes](frontend/themes/overview.md)
