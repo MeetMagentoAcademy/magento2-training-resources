@@ -40,6 +40,10 @@
     * [Flash message](backend/modules/flash_message.md)
     * [Acessing databade](backend/modules/database.md)
     * [APIs](backend/modules/service_contracts.md)
+  * [Performance](backend/performance.md)
+    * [Profiler](backend/performance/profiler.md)
+    * [EAV explained](backend/performance/eav.md)
+  * [Dependency Injection](backend/di.md)
 
 ### 4. Frontend
   * [Themes](frontend/themes/overview.md)
