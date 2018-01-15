@@ -1,0 +1,1099 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Creating modules · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="controller.html" />
+    
+    
+    <link rel="prev" href="../modules.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">1. Sysops</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../sysops/part1.html">
+            
+                <a href="../../sysops/part1.html">
+            
+                    
+                    Part 1 - Virtual machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../sysops/part2.html">
+            
+                <a href="../../sysops/part2.html">
+            
+                    
+                    Part 2 - Configuring network for VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../sysops/part3.html">
+            
+                <a href="../../sysops/part3.html">
+            
+                    
+                    Part 3 - Dedicated user for Magento processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../sysops/part4.html">
+            
+                <a href="../../sysops/part4.html">
+            
+                    
+                    Part 4 - Debian repositories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../sysops/part5.html">
+            
+                <a href="../../sysops/part5.html">
+            
+                    
+                    Part 5 - MySQL installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../sysops/part6.html">
+            
+                <a href="../../sysops/part6.html">
+            
+                    
+                    Part 6 - PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../sysops/part7.html">
+            
+                <a href="../../sysops/part7.html">
+            
+                    
+                    Part 7 - Web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../sysops/part8.html">
+            
+                <a href="../../sysops/part8.html">
+            
+                    
+                    Part 8 - Two Redis instances
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../sysops/part9.html">
+            
+                <a href="../../sysops/part9.html">
+            
+                    
+                    Part 9 - Code deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../sysops/part10.html">
+            
+                <a href="../../sysops/part10.html">
+            
+                    
+                    Part 10 - Cron jobs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../../sysops/AUTHORS.html">
+            
+                <a href="../../sysops/AUTHORS.html">
+            
+                    
+                    Authors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2. Administration</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../administration/part1.html">
+            
+                <a href="../../administration/part1.html">
+            
+                    
+                    Part 1 - Basic store configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../administration/part2.html">
+            
+                <a href="../../administration/part2.html">
+            
+                    
+                    Part 2 - Creating catalog - products
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../administration/part3.html">
+            
+                <a href="../../administration/part3.html">
+            
+                    
+                    Part 3 - Creating catalog - attributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../administration/part4.html">
+            
+                <a href="../../administration/part4.html">
+            
+                    
+                    Part 4 - Creating catalog - categories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../administration/part5.html">
+            
+                <a href="../../administration/part5.html">
+            
+                    
+                    Part 5 - Marketing - Catalog price rules 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../../administration/part6.html">
+            
+                <a href="../../administration/part6.html">
+            
+                    
+                    Part 6 - Marketing - Cart price rules 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../../administration/part7.html">
+            
+                <a href="../../administration/part7.html">
+            
+                    
+                    Part 7 - Marketing - Customers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../../administration/part8.html">
+            
+                <a href="../../administration/part8.html">
+            
+                    
+                    Part 8 - Marketing - Email templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../../administration/part9.html">
+            
+                <a href="../../administration/part9.html">
+            
+                    
+                    Part 9 - Orders management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../../administration/part10.html">
+            
+                <a href="../../administration/part10.html">
+            
+                    
+                    Part 10 - Payments Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../../administration/part11.html">
+            
+                <a href="../../administration/part11.html">
+            
+                    
+                    Part 11 - Shipping methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../../administration/part12.html">
+            
+                <a href="../../administration/part12.html">
+            
+                    
+                    Part 12 - Store Setting Conf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../../administration/part13.html">
+            
+                <a href="../../administration/part13.html">
+            
+                    
+                    Part 13 - Export/Import products
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="../../administration/part14.html">
+            
+                <a href="../../administration/part14.html">
+            
+                    
+                    Part 14 - Reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="../../administration/part15.html">
+            
+                <a href="../../administration/part15.html">
+            
+                    
+                    Contact/ Q&A
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3. Backend</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../modules.html">
+            
+                <a href="../modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="4.1.1" data-path="create.html">
+            
+                <a href="create.html">
+            
+                    
+                    Creating modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="controller.html">
+            
+                <a href="controller.html">
+            
+                    
+                    Defining controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="layout.html">
+            
+                <a href="layout.html">
+            
+                    
+                    Rendering page layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="translations.html">
+            
+                <a href="translations.html">
+            
+                    
+                    Translations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="store_configuration.html">
+            
+                <a href="store_configuration.html">
+            
+                    
+                    Store configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="flash_message.html">
+            
+                <a href="flash_message.html">
+            
+                    
+                    Flash message
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="database.html">
+            
+                <a href="database.html">
+            
+                    
+                    Acessing databade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="service_contracts.html">
+            
+                <a href="service_contracts.html">
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../performance.html">
+            
+                <a href="../performance.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../performance/profiler.html">
+            
+                <a href="../performance/profiler.html">
+            
+                    
+                    Profiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../performance/eav.html">
+            
+                <a href="../performance/eav.html">
+            
+                    
+                    EAV explained
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../di.html">
+            
+                <a href="../di.html">
+            
+                    
+                    Dependency Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4. Frontend</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../frontend/themes/overview.html">
+            
+                <a href="../../frontend/themes/overview.html">
+            
+                    
+                    Themes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../frontend/themes/structure.html">
+            
+                <a href="../../frontend/themes/structure.html">
+            
+                    
+                    Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../frontend/themes/inheritance.html">
+            
+                <a href="../../frontend/themes/inheritance.html">
+            
+                    
+                    Inheritance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../../frontend/themes/debug.html">
+            
+                <a href="../../frontend/themes/debug.html">
+            
+                    
+                    Debuging
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../frontend/layout/overview.html">
+            
+                <a href="../../frontend/layout/overview.html">
+            
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../frontend/layout/types.html">
+            
+                <a href="../../frontend/layout/types.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../../frontend/layout/examples.html">
+            
+                <a href="../../frontend/layout/examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../frontend/templates/overview.html">
+            
+                <a href="../../frontend/templates/overview.html">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../frontend/styles/overview.html">
+            
+                <a href="../../frontend/styles/overview.html">
+            
+                    
+                    Styles
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../../frontend/styles/grunt.html">
+            
+                <a href="../../frontend/styles/grunt.html">
+            
+                    
+                    Grunt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../../frontend/styles/sass.html">
+            
+                <a href="../../frontend/styles/sass.html">
+            
+                    
+                    SASS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../../frontend/styles/magento-ui.html">
+            
+                <a href="../../frontend/styles/magento-ui.html">
+            
+                    
+                    Magento UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../../frontend/javascript/overview.html">
+            
+                <a href="../../frontend/javascript/overview.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="../../frontend/javascript/requirejs.html">
+            
+                <a href="../../frontend/javascript/requirejs.html">
+            
+                    
+                    Require.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.2" data-path="../../frontend/javascript/using-amd.html">
+            
+                <a href="../../frontend/javascript/using-amd.html">
+            
+                    
+                    AMD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.3" data-path="../../frontend/javascript/custom.html">
+            
+                <a href="../../frontend/javascript/custom.html">
+            
+                    
+                    Custom modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Creating modules</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="creating-magento2-modules">Creating Magento2 modules</h1>
+<h2 id="composerjson"><code>composer.json</code></h2>
+<p>All modern PHP applications should use <a href="https://getcomposer.org" target="_blank">composer</a>.
+Composer is package manager for PHP.
+It allows easy management and installation of all required dependencies.</p>
+<p>Good point to start with module creation is to create composer description for module we are creating - <code>composer.json</code> file.</p>
+<blockquote>
+<p>Although this step is not required when modules are installed by putting them in <code>app/code</code> directory it is good practice to prepare those files beforehand.</p>
+</blockquote>
+<p>Here is minimalistic <code>composer.json</code> file:</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;mmacademy/module-hello&quot;</span>,
+    <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;Shows Hello World!&quot;</span>,
+    <span class="hljs-string">&quot;require&quot;</span>: {
+        <span class="hljs-string">&quot;magento/framework&quot;</span>: <span class="hljs-string">&quot;100.1.*&quot;</span>
+    },
+    <span class="hljs-string">&quot;autoload&quot;</span>: {
+        <span class="hljs-string">&quot;files&quot;</span>: [
+            <span class="hljs-string">&quot;registration.php&quot;</span>
+        ],
+        <span class="hljs-string">&quot;psr-4&quot;</span>: {
+            <span class="hljs-string">&quot;MMAcademy\\Hello\\&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+        }
+    }
+}
+</code></pre>
+<p>Minimal configuration contains:</p>
+<ul>
+<li>module name - this module name specifies name of composer package, You should follow convention when naming composer packages with Magento2 modules: <code>&lt;vendor name&gt;/module-&lt;moudle name&gt;</code> where Magento2 module name would follow convention: <code>&lt;Vendor Name&gt;_&lt;Module_Name&gt;</code>.</li>
+<li>module description - this is optional step but it is always nice to know what this module is supposed to do</li>
+<li>dependencies in <code>require</code> section - here we specified that <code>magento/framework</code> in at least version <code>100.1.0</code> - this version is shipped with Magento 2.1</li>
+<li>autoload definitions</li>
+</ul>
+<h3 id="autoload-explained">Autoload explained</h3>
+<p>Since PHP 5.2 developer can register methods that will handle discovery and inclusion of class definition files when class not present in current processing context is referenced.
+While autoloading strategies can be implemented easly in modern PHP applications it is common to delegate this task to code generated by composer.
+Within <code>composer.json</code> files we can define few types of autoloading to be performed:</p>
+<ul>
+<li>PSR-0 - where directory structure is mapped to PHP namespace</li>
+<li>PSR-4 - where directory structure is mapped to PHP sub-namespace (this standard is applying composer package constraints onto PSR-0 standard)</li>
+<li>files - where given files are always included at the begining of every dispatched request</li>
+<li>classmap - where given files are analysed by composer tool and mapping of class names and corresponding file names is created</li>
+</ul>
+<p>Note that composer has options for providing &quot;optimized&quot; autoloaders - this boils down to builing classmap based on PSR-0 and PSR-4 definitions allowing to avoid costly access to disk resources.</p>
+<h2 id="registrationphp"><code>registration.php</code></h2>
+<p>Magento platform modularity in composer enabled environment is fueled by <code>registration.php</code> files that are used to register given extension with framework code.
+In case of composer installed packages <code>registartion.php</code> is executed by composer autoloader (as they are defined in <code>file</code> section of composer autoloader definition).
+For non-composer installed packages file <code>app/etc/NonComposerComponentRegistration.php</code> will attempt to discover all <code>registartion.php</code> files in <code>app/code</code> directory.</p>
+<p>Typical content of <code>registtration.php</code> file is as follows:</p>
+<pre><code class="lang-php"><span class="hljs-meta">&lt;?php</span>
+
+\Magento\Framework\Component\ComponentRegistrar::register(
+    \Magento\Framework\Component\ComponentRegistrar::MODULE,
+    <span class="hljs-string">&apos;MMAcademy_Hello&apos;</span>,
+    <span class="hljs-keyword">__DIR__</span>
+);
+</code></pre>
+<p>This binds component type (module, theme, language pack or library) its name and its root directory (in order to locate related files).</p>
+<h2 id="etcmodulexml"><code>etc/module.xml</code></h2>
+<p>Another required file for module definition is <code>etc/modules.xml</code> file that declares our module dependencies on magento module level and declares setup version.</p>
+<p>Node <code>sequence</code> defines module dependencies that have to be loaded before our module. Module loading order may impact final configuration state as modules loaded layer may impact configurations and behaviours of modules loaded before them.</p>
+<p>Node <code>setup_version</code> defines module setup version number - this number is used to detect if changes in database scheme are required.</p>
+<blockquote>
+<p>There are several strategies for maintaining version numbers.
+I recommend to keep this version only for database changes purposes and not keeping it in sync with composer package version number.
+Every time Magento detects change in setup version number maintenance break will be required to perform database scheme upgrade.
+If changes introduced to module do not impact database state do not increment setup version number to avoid this costly operation, but be sure that composer version number was incremented accordingly to semantic versioning to indicate code changes made.</p>
+</blockquote>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span><span class="hljs-meta">?&gt;</span></span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">config</span> <span class="hljs-attr">xmlns:xsi</span>=<span class="hljs-string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span> <span class="hljs-attr">xsi:noNamespaceSchemaLocation</span>=<span class="hljs-string">&quot;urn:magento:framework:Module/etc/module.xsd&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">module</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;MMAcademy_Hello&quot;</span> <span class="hljs-attr">setup_version</span>=<span class="hljs-string">&quot;1.0.0&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">sequence</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">sequence</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">module</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">config</span>&gt;</span>
+</code></pre>
+<h2 id="verify-your-work">Verify Your work</h2>
+<p>Validity of <code>composer.json</code> file can be checked by composer itself.
+Run <code>php composer.phar validate path/to/composer.json</code> to check specified composer.json file.</p>
+<p>In order to check if our module was properly defined we can run Magento CLI command in order to list all modules found - <code>php bin/magento module:status</code>.
+We should see that our module was found but is not enabled:</p>
+<pre><code>...
+
+List of disabled modules:
+MMAcademy_Hello
+</code></pre><p>Now we can enable our module executing <code>php bin/magento module:enable MMAcademy_Hello</code></p>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><a href="controller.html">Define controllers and routes to handle HTTP requests</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../modules.html" class="navigation navigation-prev " aria-label="Previous page: Modules">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="controller.html" class="navigation navigation-next " aria-label="Next page: Defining controllers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Creating modules","level":"4.1.1","depth":2,"next":{"title":"Defining controllers","level":"4.1.2","depth":2,"path":"backend/modules/controller.md","ref":"backend/modules/controller.md","articles":[]},"previous":{"title":"Modules","level":"4.1","depth":1,"path":"backend/modules.md","ref":"backend/modules.md","articles":[{"title":"Creating modules","level":"4.1.1","depth":2,"path":"backend/modules/create.md","ref":"backend/modules/create.md","articles":[]},{"title":"Defining controllers","level":"4.1.2","depth":2,"path":"backend/modules/controller.md","ref":"backend/modules/controller.md","articles":[]},{"title":"Rendering page layout","level":"4.1.3","depth":2,"path":"backend/modules/layout.md","ref":"backend/modules/layout.md","articles":[]},{"title":"Translations","level":"4.1.4","depth":2,"path":"backend/modules/translations.md","ref":"backend/modules/translations.md","articles":[]},{"title":"Store configuration","level":"4.1.5","depth":2,"path":"backend/modules/store_configuration.md","ref":"backend/modules/store_configuration.md","articles":[]},{"title":"Flash message","level":"4.1.6","depth":2,"path":"backend/modules/flash_message.md","ref":"backend/modules/flash_message.md","articles":[]},{"title":"Acessing databade","level":"4.1.7","depth":2,"path":"backend/modules/database.md","ref":"backend/modules/database.md","articles":[]},{"title":"APIs","level":"4.1.8","depth":2,"path":"backend/modules/service_contracts.md","ref":"backend/modules/service_contracts.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"backend/modules/create.md","mtime":"2018-01-15T09:27:58.963Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-15T09:30:14.962Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

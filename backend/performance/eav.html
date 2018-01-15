@@ -1,0 +1,1374 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>EAV explained · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../di.html" />
+    
+    
+    <link rel="prev" href="profiler.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">1. Sysops</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../sysops/part1.html">
+            
+                <a href="../../sysops/part1.html">
+            
+                    
+                    Part 1 - Virtual machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../sysops/part2.html">
+            
+                <a href="../../sysops/part2.html">
+            
+                    
+                    Part 2 - Configuring network for VM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../sysops/part3.html">
+            
+                <a href="../../sysops/part3.html">
+            
+                    
+                    Part 3 - Dedicated user for Magento processes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../sysops/part4.html">
+            
+                <a href="../../sysops/part4.html">
+            
+                    
+                    Part 4 - Debian repositories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../sysops/part5.html">
+            
+                <a href="../../sysops/part5.html">
+            
+                    
+                    Part 5 - MySQL installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../sysops/part6.html">
+            
+                <a href="../../sysops/part6.html">
+            
+                    
+                    Part 6 - PHP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../sysops/part7.html">
+            
+                <a href="../../sysops/part7.html">
+            
+                    
+                    Part 7 - Web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../sysops/part8.html">
+            
+                <a href="../../sysops/part8.html">
+            
+                    
+                    Part 8 - Two Redis instances
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../sysops/part9.html">
+            
+                <a href="../../sysops/part9.html">
+            
+                    
+                    Part 9 - Code deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../sysops/part10.html">
+            
+                <a href="../../sysops/part10.html">
+            
+                    
+                    Part 10 - Cron jobs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../../sysops/AUTHORS.html">
+            
+                <a href="../../sysops/AUTHORS.html">
+            
+                    
+                    Authors
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2. Administration</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../administration/part1.html">
+            
+                <a href="../../administration/part1.html">
+            
+                    
+                    Part 1 - Basic store configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../administration/part2.html">
+            
+                <a href="../../administration/part2.html">
+            
+                    
+                    Part 2 - Creating catalog - products
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../administration/part3.html">
+            
+                <a href="../../administration/part3.html">
+            
+                    
+                    Part 3 - Creating catalog - attributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../administration/part4.html">
+            
+                <a href="../../administration/part4.html">
+            
+                    
+                    Part 4 - Creating catalog - categories
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../administration/part5.html">
+            
+                <a href="../../administration/part5.html">
+            
+                    
+                    Part 5 - Marketing - Catalog price rules 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../../administration/part6.html">
+            
+                <a href="../../administration/part6.html">
+            
+                    
+                    Part 6 - Marketing - Cart price rules 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../../administration/part7.html">
+            
+                <a href="../../administration/part7.html">
+            
+                    
+                    Part 7 - Marketing - Customers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../../administration/part8.html">
+            
+                <a href="../../administration/part8.html">
+            
+                    
+                    Part 8 - Marketing - Email templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../../administration/part9.html">
+            
+                <a href="../../administration/part9.html">
+            
+                    
+                    Part 9 - Orders management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../../administration/part10.html">
+            
+                <a href="../../administration/part10.html">
+            
+                    
+                    Part 10 - Payments Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../../administration/part11.html">
+            
+                <a href="../../administration/part11.html">
+            
+                    
+                    Part 11 - Shipping methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../../administration/part12.html">
+            
+                <a href="../../administration/part12.html">
+            
+                    
+                    Part 12 - Store Setting Conf
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../../administration/part13.html">
+            
+                <a href="../../administration/part13.html">
+            
+                    
+                    Part 13 - Export/Import products
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="../../administration/part14.html">
+            
+                <a href="../../administration/part14.html">
+            
+                    
+                    Part 14 - Reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="../../administration/part15.html">
+            
+                <a href="../../administration/part15.html">
+            
+                    
+                    Contact/ Q&A
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3. Backend</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../modules.html">
+            
+                <a href="../modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../modules/create.html">
+            
+                <a href="../modules/create.html">
+            
+                    
+                    Creating modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../modules/controller.html">
+            
+                <a href="../modules/controller.html">
+            
+                    
+                    Defining controllers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../modules/layout.html">
+            
+                <a href="../modules/layout.html">
+            
+                    
+                    Rendering page layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../modules/translations.html">
+            
+                <a href="../modules/translations.html">
+            
+                    
+                    Translations
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../modules/store_configuration.html">
+            
+                <a href="../modules/store_configuration.html">
+            
+                    
+                    Store configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../modules/flash_message.html">
+            
+                <a href="../modules/flash_message.html">
+            
+                    
+                    Flash message
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../modules/database.html">
+            
+                <a href="../modules/database.html">
+            
+                    
+                    Acessing databade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../modules/service_contracts.html">
+            
+                <a href="../modules/service_contracts.html">
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../performance.html">
+            
+                <a href="../performance.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="profiler.html">
+            
+                <a href="profiler.html">
+            
+                    
+                    Profiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2.2" data-path="eav.html">
+            
+                <a href="eav.html">
+            
+                    
+                    EAV explained
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../di.html">
+            
+                <a href="../di.html">
+            
+                    
+                    Dependency Injection
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4. Frontend</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../frontend/themes/overview.html">
+            
+                <a href="../../frontend/themes/overview.html">
+            
+                    
+                    Themes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../../frontend/themes/structure.html">
+            
+                <a href="../../frontend/themes/structure.html">
+            
+                    
+                    Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../../frontend/themes/inheritance.html">
+            
+                <a href="../../frontend/themes/inheritance.html">
+            
+                    
+                    Inheritance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../../frontend/themes/debug.html">
+            
+                <a href="../../frontend/themes/debug.html">
+            
+                    
+                    Debuging
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../frontend/layout/overview.html">
+            
+                <a href="../../frontend/layout/overview.html">
+            
+                    
+                    Layout
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../../frontend/layout/types.html">
+            
+                <a href="../../frontend/layout/types.html">
+            
+                    
+                    Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../../frontend/layout/examples.html">
+            
+                <a href="../../frontend/layout/examples.html">
+            
+                    
+                    Examples
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../frontend/templates/overview.html">
+            
+                <a href="../../frontend/templates/overview.html">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../../frontend/styles/overview.html">
+            
+                <a href="../../frontend/styles/overview.html">
+            
+                    
+                    Styles
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.4.1" data-path="../../frontend/styles/grunt.html">
+            
+                <a href="../../frontend/styles/grunt.html">
+            
+                    
+                    Grunt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.2" data-path="../../frontend/styles/sass.html">
+            
+                <a href="../../frontend/styles/sass.html">
+            
+                    
+                    SASS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4.3" data-path="../../frontend/styles/magento-ui.html">
+            
+                <a href="../../frontend/styles/magento-ui.html">
+            
+                    
+                    Magento UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../../frontend/javascript/overview.html">
+            
+                <a href="../../frontend/javascript/overview.html">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.5.1" data-path="../../frontend/javascript/requirejs.html">
+            
+                <a href="../../frontend/javascript/requirejs.html">
+            
+                    
+                    Require.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.2" data-path="../../frontend/javascript/using-amd.html">
+            
+                <a href="../../frontend/javascript/using-amd.html">
+            
+                    
+                    AMD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5.3" data-path="../../frontend/javascript/custom.html">
+            
+                <a href="../../frontend/javascript/custom.html">
+            
+                    
+                    Custom modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >EAV explained</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="entity-attribute-value-eav-explained">Entity Attribute Value (EAV) explained</h1>
+<p>Object like products, categories, customers and thier adresses are stored in database differently than other data.
+On example of products we have possibility to define a lot of product attribute sets that use different attribbutes for different types of products.
+This basically represent &quot;how to handle object inheritance in object relational mapping&quot; problem.</p>
+<p>EAV (Entity Attribute Value) implemented in Magento is improvement of concept of storing every attribute in it&apos;s separate table.
+For optimized database schema one of the solutions to inheritance problem is to store main entity information in one table, and then all optional attributes would be stored in dedicated tables.
+Since in PHP and Magento we deal with only few types of basic scalar data types we have only few tables - one for every simple scalar type we will be using.</p>
+<p>More over EAV not only solved problem of how to implement ingeritnace in object relational mapping it also allows for easily translating given attribute values for different store scopes.</p>
+<h2 id="product-tables">Product tables</h2>
+<p>Based on product tables we can see main product entry in table <code>catalog_product_entity</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Table name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>entity_id</code></td>
+<td>Entity unique internal ID</td>
+</tr>
+<tr>
+<td><code>attribute_set_id</code></td>
+<td>Indicated available attributes by assigned attribute set</td>
+</tr>
+<tr>
+<td><code>type_id</code></td>
+<td>Indicated internal product type</td>
+</tr>
+<tr>
+<td><code>sku</code></td>
+<td>Unqiue human friendly ID</td>
+</tr>
+<tr>
+<td><code>has_options</code></td>
+<td>some important information ;)</td>
+</tr>
+<tr>
+<td><code>required_options</code></td>
+<td>some important information ;)</td>
+</tr>
+<tr>
+<td><code>created_at</code></td>
+<td>Entity creation time</td>
+</tr>
+<tr>
+<td><code>updated_at</code></td>
+<td>Entity update time (should be tracked by application and updated even if this record is not changed)</td>
+</tr>
+</tbody>
+</table>
+<p>Apart of few special cases all attribute value tables have following strucutre.</p>
+<table>
+<thead>
+<tr>
+<th>Table Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>value_id</code></td>
+<td>Internal value ID and primary key</td>
+</tr>
+<tr>
+<td><code>attribute_id</code></td>
+<td>Attribute ID</td>
+</tr>
+<tr>
+<td><code>store_id</code></td>
+<td>Store IO for this value (<code>0</code> for default scope)</td>
+</tr>
+<tr>
+<td><code>entity_id</code></td>
+<td>Entity internal ID</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>Atrribute value for given attribute in given scope</td>
+</tr>
+</tbody>
+</table>
+<p>Usually there are a lot of <code>LEFT JOIN</code> operations in EAV queries - using <code>LEFT JOIN</code> allows us to fetch entities with thier optional attributes.
+Here is basic query example.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> e.<span class="hljs-keyword">id</span>, a1.<span class="hljs-keyword">value</span> <span class="hljs-keyword">AS</span> description
+<span class="hljs-keyword">FROM</span> catalog_product_entity e
+<span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> catalog_product_entity_varchar a1
+  <span class="hljs-keyword">ON</span> (e.entity_id = a1.entity_id
+      <span class="hljs-keyword">AND</span> a1.attribute_id = <span class="hljs-number">123</span>)
+</code></pre>
+<p>As mentioned above EAV also provides data structure for translations and scoped values with option to inherit values from main scope.
+This is achived by <code>store_id</code> column in value tables.
+For default scope <code>store_id</code> is equal to <code>0</code> this allows us to query for values with two different <code>store_id</code> - <code>0</code> and current store.
+If current store value does not exists it means that default value should be used.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> e.entity_id,
+       <span class="hljs-keyword">IF</span>(s1.value_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>, d1.<span class="hljs-keyword">value</span>, s1.<span class="hljs-keyword">value</span>) <span class="hljs-keyword">AS</span> <span class="hljs-keyword">num</span>
+<span class="hljs-keyword">FROM</span> catalog_product_entity e
+<span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> catalog_product_entity_int s1
+  <span class="hljs-keyword">ON</span> (e.entity_id = s1.entity_id
+      <span class="hljs-keyword">AND</span> s1.attribute_id = <span class="hljs-number">123</span>
+      <span class="hljs-keyword">AND</span> s1.store_id = <span class="hljs-number">2</span>)
+<span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> catalog_product_entity_int d1
+  <span class="hljs-keyword">ON</span> (e.entity_id = d1.entity_id
+      <span class="hljs-keyword">AND</span> d1.attribute_id = <span class="hljs-number">123</span>
+      <span class="hljs-keyword">AND</span> d1.store_id = <span class="hljs-number">0</span>)
+</code></pre>
+<h2 id="profiling-database-queries">Profiling database queries</h2>
+<p>Magento2 comes with database profiler build in we just have to follow <a href="http://devdocs.magento.com/guides/v2.0/config-guide/db-profiler/db-profiler.html" target="_blank">oficial configuration steps</a> to enable it.</p>
+<p>Modify <code>/app/etc/env.php</code> to add the following reference to the database profiler class in connection details node:</p>
+<pre><code>&apos;profiler&apos; =&gt; [
+   &apos;class&apos; =&gt; &apos;\Magento\Framework\DB\Profiler&apos;,
+   &apos;enabled&apos; =&gt; true,
+],
+</code></pre><p>Add following code at the end of the <code>/pub/index.php</code> to output gathered information.        </p>
+<pre><code class="lang-php"><span class="hljs-comment">/** <span class="hljs-doctag">@var</span> \Magento\Framework\App\ResourceConnection $res */</span>
+$res = \Magento\Framework\App\ObjectManager::getInstance()-&gt;get(<span class="hljs-string">&apos;Magento\Framework\App\ResourceConnection&apos;</span>);
+<span class="hljs-comment">/** <span class="hljs-doctag">@var</span> Magento\Framework\DB\Profiler $profiler */</span>
+$profiler = $res-&gt;getConnection(<span class="hljs-string">&apos;read&apos;</span>)-&gt;getProfiler();
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;&lt;table cellpadding=&apos;0&apos; cellspacing=&apos;0&apos; border=&apos;1&apos;&gt;&quot;</span>;
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;&lt;tr&gt;&quot;</span>;
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;&lt;th&gt;Time &lt;br/&gt;[Total Time: &quot;</span>.$profiler-&gt;getTotalElapsedSecs().<span class="hljs-string">&quot; secs]&lt;/th&gt;&quot;</span>;
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;&lt;th&gt;SQL [Total: &quot;</span>.$profiler-&gt;getTotalNumQueries().<span class="hljs-string">&quot; queries]&lt;/th&gt;&quot;</span>;
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;&lt;th&gt;Query Params&lt;/th&gt;&quot;</span>;
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;&lt;/tr&gt;&quot;</span>;
+<span class="hljs-keyword">foreach</span> ($profiler-&gt;getQueryProfiles() <span class="hljs-keyword">as</span> $query) {
+    <span class="hljs-comment">/** <span class="hljs-doctag">@var</span> Zend_Db_Profiler_Query $query*/</span>
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;&lt;tr&gt;&apos;</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;&lt;td&gt;&apos;</span>, number_format(<span class="hljs-number">1000</span> * $query-&gt;getElapsedSecs(), <span class="hljs-number">2</span>), <span class="hljs-string">&apos;ms&apos;</span>, <span class="hljs-string">&apos;&lt;/td&gt;&apos;</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;&lt;td&gt;&apos;</span>, $query-&gt;getQuery(), <span class="hljs-string">&apos;&lt;/td&gt;&apos;</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;&lt;td&gt;&apos;</span>, json_encode($query-&gt;getQueryParams()), <span class="hljs-string">&apos;&lt;/td&gt;&apos;</span>;
+    <span class="hljs-keyword">echo</span> <span class="hljs-string">&apos;&lt;/tr&gt;&apos;</span>;
+}
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;&lt;/table&gt;&quot;</span>;
+</code></pre>
+<p>So lets look on how Magento loaded product data in our example based on product repository.
+We can see multiple queries that are used to produce final objects.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> 
+  <span class="hljs-string">`e`</span>.*,
+  <span class="hljs-keyword">IF</span>(at_status.value_id &gt; <span class="hljs-number">0</span>, at_status.<span class="hljs-keyword">value</span>, at_status_default.<span class="hljs-keyword">value</span>) <span class="hljs-keyword">AS</span> <span class="hljs-string">`status`</span>,
+  <span class="hljs-keyword">IF</span>(at_visibility.value_id &gt; <span class="hljs-number">0</span>, at_visibility.<span class="hljs-keyword">value</span>, at_visibility_default.<span class="hljs-keyword">value</span>) <span class="hljs-keyword">AS</span> <span class="hljs-string">`visibility`</span>,
+  <span class="hljs-string">`stock_status_index`</span>.<span class="hljs-string">`stock_status`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`is_salable`</span>
+<span class="hljs-keyword">FROM</span> 
+  <span class="hljs-string">`catalog_product_entity`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`e`</span>
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`at_status_default`</span> <span class="hljs-keyword">ON</span> (<span class="hljs-string">`at_status_default`</span>.<span class="hljs-string">`entity_id`</span> = <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_status_default`</span>.<span class="hljs-string">`attribute_id`</span> = <span class="hljs-string">&apos;97&apos;</span>) <span class="hljs-keyword">AND</span> <span class="hljs-string">`at_status_default`</span>.<span class="hljs-string">`store_id`</span> = <span class="hljs-number">0</span>
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`at_status`</span> <span class="hljs-keyword">ON</span> (<span class="hljs-string">`at_status`</span>.<span class="hljs-string">`entity_id`</span> = <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_status`</span>.<span class="hljs-string">`attribute_id`</span> = <span class="hljs-string">&apos;97&apos;</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_status`</span>.<span class="hljs-string">`store_id`</span> = <span class="hljs-number">1</span>)
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`at_visibility_default`</span> <span class="hljs-keyword">ON</span> (<span class="hljs-string">`at_visibility_default`</span>.<span class="hljs-string">`entity_id`</span> = <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_visibility_default`</span>.<span class="hljs-string">`attribute_id`</span> = <span class="hljs-string">&apos;99&apos;</span>) <span class="hljs-keyword">AND</span> <span class="hljs-string">`at_visibility_default`</span>.<span class="hljs-string">`store_id`</span> = <span class="hljs-number">0</span>
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`at_visibility`</span> <span class="hljs-keyword">ON</span> (<span class="hljs-string">`at_visibility`</span>.<span class="hljs-string">`entity_id`</span> = <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_visibility`</span>.<span class="hljs-string">`attribute_id`</span> = <span class="hljs-string">&apos;99&apos;</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_visibility`</span>.<span class="hljs-string">`store_id`</span> = <span class="hljs-number">1</span>)
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`cataloginventory_stock_status`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`stock_status_index`</span> <span class="hljs-keyword">ON</span> e.entity_id = stock_status_index.product_id <span class="hljs-keyword">AND</span> stock_status_index.website_id = <span class="hljs-number">0</span> <span class="hljs-keyword">AND</span> stock_status_index.stock_id = <span class="hljs-number">1</span>
+<span class="hljs-keyword">WHERE</span>
+  ((<span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span> <span class="hljs-keyword">IN</span>(<span class="hljs-string">&apos;4&apos;</span>, <span class="hljs-string">&apos;14&apos;</span>, <span class="hljs-string">&apos;1817&apos;</span>, <span class="hljs-string">&apos;1561&apos;</span>, <span class="hljs-string">&apos;6&apos;</span>)))
+</code></pre>
+<p>We can see that first query executed checks what products can be showed (we are checking if they are visible, in stock and available for purchase)</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> 
+  <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`attribute_id`</span>, <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>, <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`default_value`</span>,
+  <span class="hljs-string">`t_s`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`store_value`</span>,
+  <span class="hljs-keyword">IF</span>(t_s.value_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>, t_d.<span class="hljs-keyword">value</span>, t_s.<span class="hljs-keyword">value</span>) <span class="hljs-keyword">AS</span> <span class="hljs-string">`value`</span>
+<span class="hljs-keyword">FROM</span>
+  <span class="hljs-string">`catalog_product_entity_varchar`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_d`</span>
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`e`</span> <span class="hljs-keyword">ON</span> e.entity_id = t_d.entity_id
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_varchar`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_s`</span> <span class="hljs-keyword">ON</span> t_s.attribute_id = t_d.attribute_id <span class="hljs-keyword">AND</span> t_s.entity_id = t_d.entity_id <span class="hljs-keyword">AND</span> t_s.store_id = <span class="hljs-number">1</span>
+<span class="hljs-keyword">WHERE</span> (e.entity_id <span class="hljs-keyword">IN</span> (<span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">14</span>, <span class="hljs-number">1561</span>, <span class="hljs-number">1817</span>)) <span class="hljs-keyword">AND</span> (t_d.attribute_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;73&apos;</span>, <span class="hljs-string">&apos;84&apos;</span>, <span class="hljs-string">&apos;86&apos;</span>, <span class="hljs-string">&apos;87&apos;</span>, <span class="hljs-string">&apos;88&apos;</span>, <span class="hljs-string">&apos;89&apos;</span>, <span class="hljs-string">&apos;96&apos;</span>, <span class="hljs-string">&apos;100&apos;</span>, <span class="hljs-string">&apos;104&apos;</span>, <span class="hljs-string">&apos;106&apos;</span>, <span class="hljs-string">&apos;109&apos;</span>, <span class="hljs-string">&apos;110&apos;</span>, <span class="hljs-string">&apos;111&apos;</span>, <span class="hljs-string">&apos;114&apos;</span>, <span class="hljs-string">&apos;116&apos;</span>, <span class="hljs-string">&apos;118&apos;</span>, <span class="hljs-string">&apos;126&apos;</span>, <span class="hljs-string">&apos;127&apos;</span>, <span class="hljs-string">&apos;129&apos;</span>, <span class="hljs-string">&apos;130&apos;</span>, <span class="hljs-string">&apos;132&apos;</span>, <span class="hljs-string">&apos;134&apos;</span>, <span class="hljs-string">&apos;135&apos;</span>, <span class="hljs-string">&apos;136&apos;</span>, <span class="hljs-string">&apos;137&apos;</span>, <span class="hljs-string">&apos;138&apos;</span>, <span class="hljs-string">&apos;139&apos;</span>, <span class="hljs-string">&apos;140&apos;</span>, <span class="hljs-string">&apos;148&apos;</span>, <span class="hljs-string">&apos;149&apos;</span>, <span class="hljs-string">&apos;150&apos;</span>, <span class="hljs-string">&apos;151&apos;</span>, <span class="hljs-string">&apos;152&apos;</span>, <span class="hljs-string">&apos;153&apos;</span>, <span class="hljs-string">&apos;154&apos;</span>)) <span class="hljs-keyword">AND</span> (t_d.store_id = <span class="hljs-keyword">IFNULL</span>(t_s.store_id, <span class="hljs-number">0</span>))
+
+<span class="hljs-keyword">UNION</span> ALL
+
+<span class="hljs-keyword">SELECT</span>
+  <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`attribute_id`</span>, <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>,
+  <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`default_value`</span>, <span class="hljs-string">`t_s`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`store_value`</span>,
+  <span class="hljs-keyword">IF</span>(t_s.value_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>, t_d.<span class="hljs-keyword">value</span>, t_s.<span class="hljs-keyword">value</span>) <span class="hljs-keyword">AS</span> <span class="hljs-string">`value`</span>
+<span class="hljs-keyword">FROM</span>
+  <span class="hljs-string">`catalog_product_entity_text`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_d`</span>
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`e`</span> <span class="hljs-keyword">ON</span> e.entity_id = t_d.entity_id
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_text`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_s`</span> <span class="hljs-keyword">ON</span> t_s.attribute_id = t_d.attribute_id <span class="hljs-keyword">AND</span> t_s.entity_id = t_d.entity_id <span class="hljs-keyword">AND</span> t_s.store_id = <span class="hljs-number">1</span>
+<span class="hljs-keyword">WHERE</span> (e.entity_id <span class="hljs-keyword">IN</span> (<span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">14</span>, <span class="hljs-number">1561</span>, <span class="hljs-number">1817</span>)) <span class="hljs-keyword">AND</span> (t_d.attribute_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;75&apos;</span>, <span class="hljs-string">&apos;76&apos;</span>, <span class="hljs-string">&apos;85&apos;</span>, <span class="hljs-string">&apos;103&apos;</span>)) <span class="hljs-keyword">AND</span> (t_d.store_id = <span class="hljs-keyword">IFNULL</span>(t_s.store_id, <span class="hljs-number">0</span>))
+
+<span class="hljs-keyword">UNION</span> ALL
+
+<span class="hljs-keyword">SELECT</span>
+  <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`attribute_id`</span>, <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>, <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`default_value`</span>,
+  <span class="hljs-string">`t_s`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`store_value`</span>,
+  <span class="hljs-keyword">IF</span>(t_s.value_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>, t_d.<span class="hljs-keyword">value</span>, t_s.<span class="hljs-keyword">value</span>) <span class="hljs-keyword">AS</span> <span class="hljs-string">`value`</span>
+<span class="hljs-keyword">FROM</span>
+  <span class="hljs-string">`catalog_product_entity_decimal`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_d`</span>
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`e`</span> <span class="hljs-keyword">ON</span> e.entity_id = t_d.entity_id
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_decimal`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_s`</span> <span class="hljs-keyword">ON</span> t_s.attribute_id = t_d.attribute_id <span class="hljs-keyword">AND</span> t_s.entity_id = t_d.entity_id <span class="hljs-keyword">AND</span> t_s.store_id = <span class="hljs-number">1</span>
+<span class="hljs-keyword">WHERE</span> (e.entity_id <span class="hljs-keyword">IN</span> (<span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">14</span>, <span class="hljs-number">1561</span>, <span class="hljs-number">1817</span>)) <span class="hljs-keyword">AND</span> (t_d.attribute_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;77&apos;</span>, <span class="hljs-string">&apos;78&apos;</span>, <span class="hljs-string">&apos;81&apos;</span>, <span class="hljs-string">&apos;82&apos;</span>, <span class="hljs-string">&apos;92&apos;</span>, <span class="hljs-string">&apos;98&apos;</span>, <span class="hljs-string">&apos;117&apos;</span>)) <span class="hljs-keyword">AND</span> (t_d.store_id = <span class="hljs-keyword">IFNULL</span>(t_s.store_id, <span class="hljs-number">0</span>))
+
+<span class="hljs-keyword">UNION</span> ALL
+
+<span class="hljs-keyword">SELECT</span>
+  <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`attribute_id`</span>, <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>, <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`default_value`</span>,
+  <span class="hljs-string">`t_s`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`store_value`</span>,
+  <span class="hljs-keyword">IF</span>(t_s.value_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>, t_d.<span class="hljs-keyword">value</span>, t_s.<span class="hljs-keyword">value</span>) <span class="hljs-keyword">AS</span> <span class="hljs-string">`value`</span>
+<span class="hljs-keyword">FROM</span>
+  <span class="hljs-string">`catalog_product_entity_datetime`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_d`</span>
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`e`</span> <span class="hljs-keyword">ON</span> e.entity_id = t_d.entity_id
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_datetime`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_s`</span> <span class="hljs-keyword">ON</span> t_s.attribute_id = t_d.attribute_id <span class="hljs-keyword">AND</span> t_s.entity_id = t_d.entity_id <span class="hljs-keyword">AND</span> t_s.store_id = <span class="hljs-number">1</span>
+<span class="hljs-keyword">WHERE</span> (e.entity_id <span class="hljs-keyword">IN</span> (<span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">14</span>, <span class="hljs-number">1561</span>, <span class="hljs-number">1817</span>)) <span class="hljs-keyword">AND</span> (t_d.attribute_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;79&apos;</span>, <span class="hljs-string">&apos;80&apos;</span>, <span class="hljs-string">&apos;94&apos;</span>, <span class="hljs-string">&apos;95&apos;</span>, <span class="hljs-string">&apos;101&apos;</span>, <span class="hljs-string">&apos;102&apos;</span>)) <span class="hljs-keyword">AND</span> (t_d.store_id = <span class="hljs-keyword">IFNULL</span>(t_s.store_id, <span class="hljs-number">0</span>))
+
+<span class="hljs-keyword">UNION</span> ALL
+
+<span class="hljs-keyword">SELECT</span>
+  <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`attribute_id`</span>, <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>, <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`default_value`</span>,
+  <span class="hljs-string">`t_s`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`store_value`</span>,
+  <span class="hljs-keyword">IF</span>(t_s.value_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>, t_d.<span class="hljs-keyword">value</span>, t_s.<span class="hljs-keyword">value</span>) <span class="hljs-keyword">AS</span> <span class="hljs-string">`value`</span>
+<span class="hljs-keyword">FROM</span>
+  <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_d`</span>
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`e`</span> <span class="hljs-keyword">ON</span> e.entity_id = t_d.entity_id
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_s`</span> <span class="hljs-keyword">ON</span> t_s.attribute_id = t_d.attribute_id <span class="hljs-keyword">AND</span> t_s.entity_id = t_d.entity_id <span class="hljs-keyword">AND</span> t_s.store_id = <span class="hljs-number">1</span>
+<span class="hljs-keyword">WHERE</span> (e.entity_id <span class="hljs-keyword">IN</span> (<span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">14</span>, <span class="hljs-number">1561</span>, <span class="hljs-number">1817</span>)) <span class="hljs-keyword">AND</span> (t_d.attribute_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;83&apos;</span>, <span class="hljs-string">&apos;91&apos;</span>, <span class="hljs-string">&apos;93&apos;</span>, <span class="hljs-string">&apos;115&apos;</span>, <span class="hljs-string">&apos;119&apos;</span>, <span class="hljs-string">&apos;120&apos;</span>, <span class="hljs-string">&apos;121&apos;</span>, <span class="hljs-string">&apos;122&apos;</span>, <span class="hljs-string">&apos;123&apos;</span>, <span class="hljs-string">&apos;128&apos;</span>, <span class="hljs-string">&apos;131&apos;</span>, <span class="hljs-string">&apos;133&apos;</span>, <span class="hljs-string">&apos;141&apos;</span>, <span class="hljs-string">&apos;142&apos;</span>, <span class="hljs-string">&apos;143&apos;</span>, <span class="hljs-string">&apos;144&apos;</span>, <span class="hljs-string">&apos;145&apos;</span>, <span class="hljs-string">&apos;146&apos;</span>, <span class="hljs-string">&apos;147&apos;</span>)) <span class="hljs-keyword">AND</span> (t_d.store_id = <span class="hljs-keyword">IFNULL</span>(t_s.store_id, <span class="hljs-number">0</span>))
+</code></pre>
+<p>Second query is a bit overwhelming but this is basically one simple query repeted few times.
+We can see that in order to avoid a lot of <code>JOIN</code> operations (also there is hard limit on number of JOIN operations in one query in MySQL implementation) there is one query executed for given attribute value type.
+<code>UNION ALL</code> statement agregates results of those queries into single response since they all have the same result structure.
+You can see that for evey table different set of <code>attribute_id</code> is used, since different attributes are stored in those tables.
+Those queries also resolve value inhertinace on query level.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">COUNT</span>(<span class="hljs-keyword">DISTINCT</span> e.entity_id)
+<span class="hljs-keyword">FROM</span>
+  <span class="hljs-string">`catalog_product_entity`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`e`</span>
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`at_status_default`</span> <span class="hljs-keyword">ON</span> (<span class="hljs-string">`at_status_default`</span>.<span class="hljs-string">`entity_id`</span> = <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_status_default`</span>.<span class="hljs-string">`attribute_id`</span> = <span class="hljs-string">&apos;97&apos;</span>) <span class="hljs-keyword">AND</span> <span class="hljs-string">`at_status_default`</span>.<span class="hljs-string">`store_id`</span> = <span class="hljs-number">0</span>
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`at_visibility_default`</span> <span class="hljs-keyword">ON</span> (<span class="hljs-string">`at_visibility_default`</span>.<span class="hljs-string">`entity_id`</span> = <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_visibility_default`</span>.<span class="hljs-string">`attribute_id`</span> = <span class="hljs-string">&apos;99&apos;</span>) <span class="hljs-keyword">AND</span> <span class="hljs-string">`at_visibility_default`</span>.<span class="hljs-string">`store_id`</span> = <span class="hljs-number">0</span>
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_index_price`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`price_index`</span> <span class="hljs-keyword">ON</span> price_index.entity_id = e.entity_id <span class="hljs-keyword">AND</span> price_index.website_id = <span class="hljs-string">&apos;1&apos;</span> <span class="hljs-keyword">AND</span> price_index.customer_group_id = <span class="hljs-number">0</span>
+<span class="hljs-keyword">WHERE</span> ((<span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span> <span class="hljs-keyword">IN</span>(<span class="hljs-string">&apos;4&apos;</span>, <span class="hljs-string">&apos;14&apos;</span>, <span class="hljs-string">&apos;1817&apos;</span>, <span class="hljs-string">&apos;1561&apos;</span>, <span class="hljs-string">&apos;6&apos;</span>)))
+</code></pre>
+<p>Another query if executed in order to fetch product price from price index.
+Since there is quire extensive logic to price calculation big portion of it is precalulated and stored in designated table called price index.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> <span class="hljs-string">`url_rewrite`</span>.*, <span class="hljs-string">`relation`</span>.* <span class="hljs-keyword">FROM</span> <span class="hljs-string">`url_rewrite`</span> <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_url_rewrite_product_category`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`relation`</span> <span class="hljs-keyword">ON</span> url_rewrite.url_rewrite_id = relation.url_rewrite_id <span class="hljs-keyword">WHERE</span> (url_rewrite.entity_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;4&apos;</span>)) <span class="hljs-keyword">AND</span> (url_rewrite.entity_type = <span class="hljs-string">&apos;product&apos;</span>) <span class="hljs-keyword">AND</span> (url_rewrite.store_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;1&apos;</span>)) <span class="hljs-keyword">AND</span> (relation.category_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>)
+<span class="hljs-keyword">SELECT</span> <span class="hljs-string">`url_rewrite`</span>.*, <span class="hljs-string">`relation`</span>.* <span class="hljs-keyword">FROM</span> <span class="hljs-string">`url_rewrite`</span> <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_url_rewrite_product_category`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`relation`</span> <span class="hljs-keyword">ON</span> url_rewrite.url_rewrite_id = relation.url_rewrite_id <span class="hljs-keyword">WHERE</span> (url_rewrite.entity_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;14&apos;</span>)) <span class="hljs-keyword">AND</span> (url_rewrite.entity_type = <span class="hljs-string">&apos;product&apos;</span>) <span class="hljs-keyword">AND</span> (url_rewrite.store_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;1&apos;</span>)) <span class="hljs-keyword">AND</span> (relation.category_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>)
+<span class="hljs-keyword">SELECT</span> <span class="hljs-string">`url_rewrite`</span>.*, <span class="hljs-string">`relation`</span>.* <span class="hljs-keyword">FROM</span> <span class="hljs-string">`url_rewrite`</span> <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_url_rewrite_product_category`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`relation`</span> <span class="hljs-keyword">ON</span> url_rewrite.url_rewrite_id = relation.url_rewrite_id <span class="hljs-keyword">WHERE</span> (url_rewrite.entity_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;1817&apos;</span>)) <span class="hljs-keyword">AND</span> (url_rewrite.entity_type = <span class="hljs-string">&apos;product&apos;</span>) <span class="hljs-keyword">AND</span> (url_rewrite.store_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;1&apos;</span>)) <span class="hljs-keyword">AND</span> (relation.category_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>)
+<span class="hljs-keyword">SELECT</span> <span class="hljs-string">`url_rewrite`</span>.*, <span class="hljs-string">`relation`</span>.* <span class="hljs-keyword">FROM</span> <span class="hljs-string">`url_rewrite`</span> <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_url_rewrite_product_category`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`relation`</span> <span class="hljs-keyword">ON</span> url_rewrite.url_rewrite_id = relation.url_rewrite_id <span class="hljs-keyword">WHERE</span> (url_rewrite.entity_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;1561&apos;</span>)) <span class="hljs-keyword">AND</span> (url_rewrite.entity_type = <span class="hljs-string">&apos;product&apos;</span>) <span class="hljs-keyword">AND</span> (url_rewrite.store_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;1&apos;</span>)) <span class="hljs-keyword">AND</span> (relation.category_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>)
+<span class="hljs-keyword">SELECT</span> <span class="hljs-string">`url_rewrite`</span>.*, <span class="hljs-string">`relation`</span>.* <span class="hljs-keyword">FROM</span> <span class="hljs-string">`url_rewrite`</span> <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_url_rewrite_product_category`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`relation`</span> <span class="hljs-keyword">ON</span> url_rewrite.url_rewrite_id = relation.url_rewrite_id <span class="hljs-keyword">WHERE</span> (url_rewrite.entity_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;6&apos;</span>)) <span class="hljs-keyword">AND</span> (url_rewrite.entity_type = <span class="hljs-string">&apos;product&apos;</span>) <span class="hljs-keyword">AND</span> (url_rewrite.store_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;1&apos;</span>)) <span class="hljs-keyword">AND</span> (relation.category_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>)
+</code></pre>
+<p>Last group of queries executed is fetching product URL rewrites for every requested product.
+Since <code>url_rewrite</code> table is usually quite big You want to avoid performing <code>JOIN</code> operation on it.
+Also note that those quereies were not executed by product repository, but were triggered during block rendering when <code>getProductUrl</code> method were called on product object.</p>
+<h2 id="flat-index">Flat Index</h2>
+<p>While EAV is considered normalized database schema it is not always the best for performance.
+As we could see query complexity for product data fetching is quite high.
+In order to optimize performance Magento introduced flat indexes for product and category data.
+Those indexes consists of one additaional data table per store view containing selected subset of attributes of products used while rendering product lists.
+Data stored within those tables is already resolved for given scope.
+Note that are redundant data - increasing size of Your database in order to improve operation performance.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span>
+  <span class="hljs-number">1</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`status`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`attribute_set_id`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`type_id`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`created_at`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`updated_at`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`sku`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`name`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`sku`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`description`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`short_description`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`price`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`special_price`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`special_from_date`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`special_to_date`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`cost`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`weight`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`image`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`small_image`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`thumbnail`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`color`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`color_value`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`news_from_date`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`news_to_date`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`visibility`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`required_options`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`has_options`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`image_label`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`small_image_label`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`thumbnail_label`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`created_at`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`updated_at`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`msrp`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`msrp_display_actual_price_type`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`price_type`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`sku_type`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`weight_type`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`price_view`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`url_key`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`url_path`</span>, 
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`links_purchased_separately`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`links_title`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`links_exist`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`gift_message_available`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`tax_class_id`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`activity`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`style_bags`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`material`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`strap_bags`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`features_bags`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`gender`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`category_gear`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`size`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`size_value`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`eco_collection`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`performance_fabric`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`erin_recommends`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`new`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`sale`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`format`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`format_value`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`style_bottom`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`style_general`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`sleeve`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`collar`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`pattern`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`climate`</span>,
+  <span class="hljs-string">`e`</span>.<span class="hljs-string">`swatch_image`</span>,
+  <span class="hljs-keyword">IF</span>(at_status.value_id &gt; <span class="hljs-number">0</span>, at_status.<span class="hljs-keyword">value</span>, at_status_default.<span class="hljs-keyword">value</span>) <span class="hljs-keyword">AS</span> <span class="hljs-string">`status`</span>,
+  <span class="hljs-keyword">IF</span>(at_visibility.value_id &gt; <span class="hljs-number">0</span>, at_visibility.<span class="hljs-keyword">value</span>, at_visibility_default.<span class="hljs-keyword">value</span>) <span class="hljs-keyword">AS</span> <span class="hljs-string">`visibility`</span>,
+  <span class="hljs-string">`stock_status_index`</span>.<span class="hljs-string">`stock_status`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`is_salable`</span>
+<span class="hljs-keyword">FROM</span>
+  <span class="hljs-string">`catalog_product_flat_1`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`e`</span>
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`at_status_default`</span> <span class="hljs-keyword">ON</span> (<span class="hljs-string">`at_status_default`</span>.<span class="hljs-string">`entity_id`</span> = <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_status_default`</span>.<span class="hljs-string">`attribute_id`</span> = <span class="hljs-string">&apos;97&apos;</span>) <span class="hljs-keyword">AND</span> <span class="hljs-string">`at_status_default`</span>.<span class="hljs-string">`store_id`</span> = <span class="hljs-number">0</span>
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`at_status`</span> <span class="hljs-keyword">ON</span> (<span class="hljs-string">`at_status`</span>.<span class="hljs-string">`entity_id`</span> = <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_status`</span>.<span class="hljs-string">`attribute_id`</span> = <span class="hljs-string">&apos;97&apos;</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_status`</span>.<span class="hljs-string">`store_id`</span> = <span class="hljs-number">1</span>)
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`at_visibility_default`</span> <span class="hljs-keyword">ON</span> (<span class="hljs-string">`at_visibility_default`</span>.<span class="hljs-string">`entity_id`</span> = <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_visibility_default`</span>.<span class="hljs-string">`attribute_id`</span> = <span class="hljs-string">&apos;99&apos;</span>) <span class="hljs-keyword">AND</span> <span class="hljs-string">`at_visibility_default`</span>.<span class="hljs-string">`store_id`</span> = <span class="hljs-number">0</span>
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_int`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`at_visibility`</span> <span class="hljs-keyword">ON</span> (<span class="hljs-string">`at_visibility`</span>.<span class="hljs-string">`entity_id`</span> = <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_visibility`</span>.<span class="hljs-string">`attribute_id`</span> = <span class="hljs-string">&apos;99&apos;</span>) <span class="hljs-keyword">AND</span> (<span class="hljs-string">`at_visibility`</span>.<span class="hljs-string">`store_id`</span> = <span class="hljs-number">1</span>)
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`cataloginventory_stock_status`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`stock_status_index`</span> <span class="hljs-keyword">ON</span> e.entity_id = stock_status_index.product_id <span class="hljs-keyword">AND</span> stock_status_index.website_id = <span class="hljs-number">0</span> <span class="hljs-keyword">AND</span> stock_status_index.stock_id = <span class="hljs-number">1</span>
+<span class="hljs-keyword">WHERE</span> ((<span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span> <span class="hljs-keyword">IN</span>(<span class="hljs-string">&apos;4&apos;</span>, <span class="hljs-string">&apos;14&apos;</span>, <span class="hljs-string">&apos;1817&apos;</span>, <span class="hljs-string">&apos;1561&apos;</span>, <span class="hljs-string">&apos;6&apos;</span>)))
+</code></pre>
+<p>Although all those attributes are stored in flat table we can still see two attributes are joined directly from EAV storage - <code>status</code> and <code>visibility</code>.
+Those are quite special attributes that controll if product can be displayed on site.
+In this special case we always want most current data - we do not want to wait for index maintenance process to update index, as enablind and disabling products is one of the most crucial tasks for store operators.</p>
+<h2 id="using-magento-collections-directly">Using Magento collections directly</h2>
+<p>When compared amount of data returned by product repository and amount of data needed by our solution we can see that a lot of it is fetched needlessly.
+In our current example we only need product name and it&apos;s URL.
+Attribute limitation cannot be applied to product repository, but since we know that it is using product collection objects underneath we can use those object directly/</p>
+<blockquote>
+<p>Note: this solution is braking &quot;use only service contracts&quot; rule.
+Such solutions should not be used with modules You indent to distribute for other stores.
+Since this will be implementation independent implementation it may brake after some Magento update or be incompatible with other third party modules.</p>
+</blockquote>
+<pre><code class="lang-php">        $collection = $this-&gt;productCollectionFactory-&gt;create();
+        $collection-&gt;addAttributeToFilter(<span class="hljs-string">&apos;entity_id&apos;</span>, [<span class="hljs-string">&apos;in&apos;</span> =&gt; $productIds]);
+        $collection-&gt;addAttributeToSelect(<span class="hljs-string">&apos;name&apos;</span>);
+</code></pre>
+<p>After we acquire instance of <code>Magento\Catalog\Model\ResourceModel\Product\Collection</code> object we apply at it basic filter restricting product IDs and require only one attribute <code>name</code>.
+As we discussed earlier product URLs will be fetched when <code>getProductUrl</code> method will be called.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span>
+  <span class="hljs-string">`e`</span>.*,
+  <span class="hljs-string">`stock_status_index`</span>.<span class="hljs-string">`stock_status`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`is_salable`</span>
+<span class="hljs-keyword">FROM</span>
+  <span class="hljs-string">`catalog_product_entity`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`e`</span>
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`cataloginventory_stock_status`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`stock_status_index`</span> <span class="hljs-keyword">ON</span> e.entity_id = stock_status_index.product_id <span class="hljs-keyword">AND</span> stock_status_index.website_id = <span class="hljs-number">0</span> <span class="hljs-keyword">AND</span> stock_status_index.stock_id = <span class="hljs-number">1</span>
+<span class="hljs-keyword">WHERE</span> (<span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span> <span class="hljs-keyword">IN</span>(<span class="hljs-string">&apos;4&apos;</span>, <span class="hljs-string">&apos;14&apos;</span>, <span class="hljs-string">&apos;1817&apos;</span>, <span class="hljs-string">&apos;1561&apos;</span>, <span class="hljs-string">&apos;6&apos;</span>))
+</code></pre>
+<p>As we can see Magento will still perform stock status check.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span>
+  <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`attribute_id`</span>, <span class="hljs-string">`e`</span>.<span class="hljs-string">`entity_id`</span>, <span class="hljs-string">`t_d`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`default_value`</span>,
+  <span class="hljs-string">`t_s`</span>.<span class="hljs-string">`value`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`store_value`</span>,
+  <span class="hljs-keyword">IF</span>(t_s.value_id <span class="hljs-keyword">IS</span> <span class="hljs-literal">NULL</span>, t_d.<span class="hljs-keyword">value</span>, t_s.<span class="hljs-keyword">value</span>) <span class="hljs-keyword">AS</span> <span class="hljs-string">`value`</span>
+<span class="hljs-keyword">FROM</span>
+  <span class="hljs-string">`catalog_product_entity_varchar`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_d`</span>
+  <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`e`</span> <span class="hljs-keyword">ON</span> e.entity_id = t_d.entity_id
+  <span class="hljs-keyword">LEFT</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">`catalog_product_entity_varchar`</span> <span class="hljs-keyword">AS</span> <span class="hljs-string">`t_s`</span> <span class="hljs-keyword">ON</span> t_s.attribute_id = t_d.attribute_id <span class="hljs-keyword">AND</span> t_s.entity_id = t_d.entity_id <span class="hljs-keyword">AND</span> t_s.store_id = <span class="hljs-number">1</span>
+<span class="hljs-keyword">WHERE</span> (e.entity_id <span class="hljs-keyword">IN</span> (<span class="hljs-number">4</span>, <span class="hljs-number">6</span>, <span class="hljs-number">14</span>, <span class="hljs-number">1561</span>, <span class="hljs-number">1817</span>)) <span class="hljs-keyword">AND</span> (t_d.attribute_id <span class="hljs-keyword">IN</span> (<span class="hljs-string">&apos;73&apos;</span>)) <span class="hljs-keyword">AND</span> (t_d.store_id = <span class="hljs-keyword">IFNULL</span>(t_s.store_id, <span class="hljs-number">0</span>))
+</code></pre>
+<p>Resulting query is still similar to ones previously seen, but it is much, much simpler as it fetched only selected data we need.
+In comparison to first solution we implemented this one provides almost 85% improvement in block rendering time.</p>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><a href="../di.html">Build more reusable code with Dependency Injection</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="profiler.html" class="navigation navigation-prev " aria-label="Previous page: Profiler">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../di.html" class="navigation navigation-next " aria-label="Next page: Dependency Injection">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"EAV explained","level":"4.2.2","depth":2,"next":{"title":"Dependency Injection","level":"4.3","depth":1,"path":"backend/di.md","ref":"backend/di.md","articles":[]},"previous":{"title":"Profiler","level":"4.2.1","depth":2,"path":"backend/performance/profiler.md","ref":"backend/performance/profiler.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"backend/performance/eav.md","mtime":"2018-01-15T09:27:58.963Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-15T09:30:14.962Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "gitbook-cli": "^2.3.0"
+  },
+  "scripts": {
+    "watch": "gitbook install && gitbook serve",
+    "build": "gitbook install && rm -rf _book && gitbook build"
+  }
+}

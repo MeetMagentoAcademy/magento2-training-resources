@@ -1,0 +1,18 @@
+# Env
+.DS_Store
+
+# IDE rules
+.idea/
+
+## Dependency directory
+node_modules
+yarn.lock
+
+# Book build output
+_book
+npm-debug.log
+
+# eBook build output
+*.epub
+*.mobi
+*.pdf
